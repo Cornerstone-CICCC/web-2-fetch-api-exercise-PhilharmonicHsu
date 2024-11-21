@@ -4,10 +4,66 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather API</title>
+  <style>
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .nighttime {
+      background-color: black;
+      color: yellow;
+    }
+
+    #title {
+      font-size: 2rem;
+      font-weight: 900;
+    }
+
+    #temp {
+      font-size: 4rem;
+      font-weight: 900;
+      margin: 1rem;
+    }
+
+    #wind-speed {
+      font-size: 2rem;
+      margin: 1rem;
+    }
+
+    #timezone {
+      font-size: 2rem;
+      margin: 1rem;
+    }
+
+    #datetime {
+      font-size: 2rem;
+      margin: 1rem;
+    }
+
+    #refresh-btn {
+      padding: 2rem;
+      border-radius: 20px;
+      font-size: 2rem;
+    }
+
+    #refresh-btn:hover {
+      background-color: #2ecc71;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-  // YOUR HTML HERE
-
-  <script src="./app.js"></script>
+  <main>
+    <div id="title">Today's Weather</div>
+    <h1 id="temp"></h1>
+    <p id="wind-speed"></p>
+    <h3 id="timezone"></h3>
+    <p id="datetime"></p>
+    <button id="refresh-btn">Refresh</button>
+  </main>
+  <script src="./app.js" defer></script>
 </body>
 </html>
